@@ -1,0 +1,35 @@
+body {
+    background-color: #242526;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #B3DEC1;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+p {
+    color: #FAF9F6;
+}
+
+a {
+    color: #B3DEC1;
+}
+
+main {
+    display: flex;
+}
+
+article {
+    flex: 1;
+    margin-right: 300px;
+    font-size: larger;
+}
+
+aside {
+    flex: 1;
+    padding-right: 20px;
+}
