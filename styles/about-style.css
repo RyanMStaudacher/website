@@ -19,17 +19,30 @@ a {
     color: #B3DEC1;
 }
 
+nav{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
 main {
     display: flex;
 }
 
 article {
-    flex: 1;
-    margin-right: 300px;
+    width: 30vw;
     font-size: larger;
+    padding-left: 10px;
 }
 
-aside {
-    flex: 1;
-    padding-right: 20px;
+.Selfie{
+    width: 30vw;
+    padding-right: 10px;
+    filter: drop-shadow(2px 2px 5px black);
 }

@@ -1,6 +1,6 @@
 body{
     background-color: #242526;
-    width: 70%;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -31,3 +31,17 @@ aside{
     flex: 1;
     margin-left: auto;
 }
+
+nav{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-flex;
+}
+
