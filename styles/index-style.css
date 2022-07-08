@@ -1,47 +1,35 @@
-body{
-    background-color: #242526;
-    width: 80vw;
-    margin: 0 auto;
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #bf4e30;
+}
+
+@font-face {
+    font-family: 'Dune_Rise';
+    src: url('../fonts/dune_rise/dune_rise-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/dune_rise/dune_rise-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/dune_rise/dune_rise-webfont.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/dune_rise/Dune_Rise.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/dune_rise/dune_rise-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 h1 {
+    position:relative;
     text-align: center;
-    color: #B3DEC1;
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    text-shadow: 2px 2px 5px black;
+    color: #e2fcef;
+    font-family: 'Dune_Rise';
+    font-size: clamp(1em, 4vh, 4vh)
 }
 
-p {
-    color: #FAF9F6;
+.headerSVG{
+    position:absolute;
+    top: 0;
 }
-
-a {
-    color: #B3DEC1;
-}
-
-main{
-    display: flex;
-}
-
-article{
-    flex: 1;
-}
-
-aside{
-    flex: 1;
-    margin-left: auto;
-}
-
-nav{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-
-nav ul{
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    display: inline-flex;
-}
-
