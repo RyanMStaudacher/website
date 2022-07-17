@@ -6,13 +6,33 @@ html{
     box-sizing: inherit;
 }
 
+/*
+Colors:
+
+White = #EAEBED
+Light Blue = #01A7C2
+Super Dark Blue = #001220
+Pewter Blue = #A3BAC3
+Teal Blue = #007090
+*/
+
 html, body{
     padding: 0;
     margin: 0;
-    background-color: #bf4e30;
+    background-color: #001220;
 }
 
 @font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face{
     font-family: 'Dune_Rise';
     src: url('../fonts/dune_rise/dune_rise-webfont.eot'); /* IE9 Compat Modes */
     src: url('../fonts/dune_rise/dune_rise-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -24,12 +44,38 @@ html, body{
 h1 {
     position:relative;
     text-align: center;
-    color: #e2fcef;
     font-family: 'Dune_Rise';
-    font-size: clamp(1em, 4vh, 4vh)
+    font-size: clamp(1em, 4vh, 4vh);
 }
 
-.headerSVG{
+#headerSVG1{
+    visibility: visible;
     position:absolute;
     top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#headerSVG2{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-family: 'Raleway';
+}
+
+.modeButton{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1vw;
+}
+
+#btn{
+    color: #001220;
 }
