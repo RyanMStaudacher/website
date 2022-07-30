@@ -102,6 +102,26 @@ p{
 #projects{
     position: relative;
     margin-top: 10vh;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+.projectwrapper{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectimage{
+    width: 25em;
+    height: auto;
+}
+
+.projectdescription{
+    width: 25em;
 }
 
 footer{
