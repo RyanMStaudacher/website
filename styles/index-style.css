@@ -106,7 +106,7 @@ p{
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-items: center;
     align-items: center;
-    margin-top:2em;
+    margin-top:5em;
     margin-bottom:2em;
 }
 
@@ -135,6 +135,12 @@ p{
 
 .projectdescription{
     width: 25em;
+}
+
+.mybackground {
+    margin: 0 30% 10vh 30%;
+    font-size: larger;
+    border-left: 1px solid white;
 }
 
 footer{

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Ryan Staudacher - Aiku</title>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Staudacher" />
+    <meta name="description" content="Personal website of Ryan Staudacher. Initially created to learn web programming and potentially show off personal development projects." />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="../images/favicon_images/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon_images/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon_images/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon_images/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon_images/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon_images/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon_images/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon_images/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon_images/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_images/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon_images/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon_images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_images/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon_images/manifest.json" />
+    <link rel="stylesheet" href="../styles/aiku-style.css" />
+
+    <script src="../website/scripts/index-script.js" defer></script>
+</head>
+
+<body style="color: #EAEBED;">
+    <header>
+        <div class="modeButton">
+            <button id="btn">Switch Theme</button>
+        </div>
+
+        <div class="backtohome">
+            <a href="../index.html">Back to home</a>
+        </div>
+
+        <h1>Aiku</h1>
+
+        <img src="../images/aiku_image.png" />
+
+        <p>
+            Aiku is Columbia College Chicago's Large Team game for 2018. I am very proud of how what our team achieved with this project.
+            I was the gameplay programmer working on the Trevor level. My contribution to the game was the GMD (Geological Manipulation Device) idea and implementation.
+            I also did much of the scripting for the level. I came up with the idea for the GMD early on in the school year and it has become an essential aspect of the game since then.
+            <br />
+            <br />
+            I have done all of the scripting for the GMD. This includes picking up objects, grappling to other objects, scoping in and out,
+            and highlighting objects that can be interacted with the GMD. Getting all of this to work was pretty tricky. At first I tried to
+            use Unity's physics to move objects around, but all of the objects would orbit the point that I wanted them to go. So instead I
+            used Slerping to smoothly move objects to the desired location.
+            <br />
+            <br />
+            For the grappling functionality at first I tried to simply move the player to the desired location, however this worked a little
+            too well and the player would get pulled inside the object the player was grappling to. I needed to offset this a little bit so
+            what I did was essentially draw a line from the player to the object, normalized that value, and used that to determine what
+            percentage of the distance to the object the player would travel. For example, if you set the value to 0.75, the player would
+            travel 75% of the way to the object. I realize that this solution is a little unorthodox, but it worked perfectly well for our needs.
+            <br />
+            <br />
+            For the scope highlight functionality I created an array of all of the objects that were able to interact with the GMD and turned
+            the emission of each object up and changed their color when the player scopes in. When the player scopes out, I just set the emission
+            value very low and change the color back to what it was.
+            <br />
+            <br />
+            I have learned a lot from this project, such as how to lerp objects and how to use events. Both the scope and the GMD script send
+            out an event to trigger certain things in the level, such as picking up the crystals in the cave. I am certain that this knowledge will help me in future projects.
+            <br />
+            <br />
+            You can download the game now at our website!
+        </p>
+    </header>
+</body>
+</html>
