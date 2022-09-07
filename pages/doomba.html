@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Ryan Staudacher - Quickdraw</title>
+    <title>Ryan Staudacher - Doomba</title>
 
     <meta charset="utf-8" />
     <meta name="author" content="Ryan Staudacher" />
@@ -40,25 +40,35 @@
             <a href="../index.html">Back to home</a>
         </div>
 
-        <h1>Aiku</h1>
+        <h1>Doomba</h1>
 
-        <img src="../images/quickdraw_image.jpeg" />
+        <img src="../images/doomba_image.png" />
 
         <p>
-            Quickdraw is a game that I helped to create for my Game Development Processing class. I am so pleased with the outcome of this project. 
-            This game is really fun to play, especially with your friends. The idea is that you are trying to shoot the 3 other people you are 
-            playing against, however you can only shoot when it is "High Noon". Each time it becomes high noon, all players stop moving, raise 
-            their guns, and attempt to shoot the other players.
+            I made Doomba for my Advanced Game Engine Scripting final project. I really enjoyed working on this project and I may continue to work on it in the future. 
+            I got the idea for the game from a video that I watched where two people taped a knife and a balloon on two Roombas and let them loose to see which would pop first.
             <br />
             <br />
-            I helped with the programming of this game, particularly the movement of the players. This game is meant to be played with xbox 360 
-            controllers. Initially, I wanted all of the movement to be controlled using only the left thumbstick. For example, pushing up or down 
-            would move the player forward and back, while pushing left or right would turn the player left and right. However, we felt that this 
-            control scheme did not feel natural and ended up changing it to where the left thumbstick is used for forward/backward movement and left/right 
-            strafing, while the right thumbstick is used to look around. This control scheme feels much more natural for our FPS and player are less confused by it.
+            I did pretty much everything myself for this project. The only things I didn't personally make were the floor texture, music, and a couple of sound effects. 
+            I made all the rest of the art assets in a program called pixelmator. I recorded me making a popping noise with my mouth and dropping a pen for the 
+            balloon popping and trash pickup sound effects. I used Audacity to record, edit, and export the sounds.
             <br />
             <br />
-            I am currently trying to get a download link for Quickdraw, but I do not have it yet. While we wait for that, why not check out some of the other games I have worked on?
+            The coding side of things for this project were pretty simple. I used the AddForce and AddTorque functions to affect the Rigidbodies of the Roombas 
+            to make them move and turn. I also used OnTrigger functions to detect when the knives hit the balloons to pop them. For the "trash", I instantiated 
+            a prefab at a random location within the arena every time a timer that I had set up hits 0. Every time a piece of trash is spawned the timer is reset.
+            <br />
+            <br />
+            I had some trouble with Unity's tags and sorting layers in this project. The knives were on a sorting layer above the other Roomba but below the 
+            tape which looked weird. I also tried to make it so that the particles for the knife collision would happen at the exact point of collision, 
+            however there were some difficulties and I ended up changing it to where both knives would emit particles anytime they collided.
+            <br />
+            <br />
+            Overall, I am very proud of this project and enjoyed making it. I would like to continue to work on it and maybe tweak the mechanics, add 
+            more levels, and possibly even make it into an app.
+            <br />
+            <br />
+            Click here to download Doomba.
         </p>
     </header>
 </body>
