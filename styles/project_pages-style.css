@@ -59,17 +59,16 @@ h1 {
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 45%;
     height: 25.3125%;
+    margin: 3em auto 3em auto;
 }
 
 p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 45%;
     font-size: larger;
 }
 

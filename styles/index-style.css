@@ -129,23 +129,31 @@ p{
     padding: 0;
     display: flex;
     flex-direction: column;
-    margin: 0em 1em 0em 1em;
+    margin: 0em 1em 5em 1em;
     flex: 0 0 25%;
+    text-align:center;
 }
 
 .projectimage{
+    display:flex;
     width: 25em;
     height: 15em;
+    align-self:center;
 }
 
 .projecttitle {
-    text-align:center;
+    display: flex;
     width: 25em;
+    align-self:center;
+    justify-content:center;
 }
 
 .projectdescription{
+    display: flex;
     width: 25em;
     height: 15em;
+    align-self:center;
+    text-align:left;
 }
 
 .mybackground {
