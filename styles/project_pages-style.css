@@ -78,97 +78,25 @@ p {
 /* Mobile */
 
 @media only screen and (max-width: 768px) {
-    /*.about_me {
-        font-size: medium;
-        margin: 10vh 10% 10vh 10%;
-    }
-
-    .about_me_header {
-        font-size: large;
-    }
-
-    .about_me_selfie {
-        width: 50px;
-        height: auto;
-    }
-
-    .mybackground {
-        font-size: medium;
-        margin: 10vh 10% 10vh 10%;
-    }
-
-    .projectimage {
-        width: 20em;
-        height: 12em;
-    }
-
-    .projecttitle {
-        text-align: center;
-        width: 20em;
-    }
-
-    .projectdescription {
-        width: 20em;
-        height: 12em;
-    }*/
-
     img{
         width: 90%;
         height: auto;
     }
 
     p {
-        width: 100%;
+        width: 90%;
         font-size: medium;
-        margin-left: 5vw;
-        margin-right: 5vw;
     }
 }
 
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
-    /*.about_me {
-        font-size: medium;
-        margin: 10vh 10% 10vh 10%;
-    }
-
-    .about_me_header {
-        font-size: large;
-    }
-
-    .about_me_selfie {
-        width: 50px;
-        height: auto;
-    }
-
-    .mybackground {
-        font-size: medium;
-        margin: 10vh 10% 10vh 10%;
-    }
-
-    .projectimage {
-        width: 20em;
-        height: 12em;
-    }
-
-    .projecttitle {
-        text-align: center;
-        width: 20em;
-    }
-
-    .projectdescription {
-        width: 20em;
-        height: 12em;
-    }*/
-
     img{
         width: 50%;
         height: auto;
     }
 
     p {
-        width: 100%;
+        width: 50%;
         font-size: medium;
-        margin-left: 5vw;
-        margin-right: 5vw;
     }
 }
