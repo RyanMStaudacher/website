@@ -30,21 +30,22 @@
     <script src="./scripts/index-script.js" defer></script>
 </head>
 <body style="color: #EAEBED;">
-    <header>
-        <div class="modeButton">
-            <button id="btn">Switch Theme</button>
-        </div>
 
+    <div class="modeButton">
+        <button id="btn"><strong>Switch Theme</strong></button>
+    </div>
+
+    <header>
         <p class="about_me">
             <img class="about_me_selfie" src="../website/images/face-modified-scaled.png" alt="My beautiful face" width="60" height="60">
             <span class="about_me_header">&emsp;Ryan Staudacher - Urbana, IL</span><br><br>
-            I am a programmer with extensive C# and Unity scripting experience as well as 
-            some experience with HTML, CSS, and Javascript. I have a Bachelor's degree 
-            in Game Design from Columbia College Chicago. During my time at Columbia, I learned to code using C# in 
+            I am a programmer with extensive C# and Unity scripting experience as well as
+            some experience with HTML, CSS, and Javascript. I have a Bachelor's degree
+            in Game Design from Columbia College Chicago. During my time at Columbia, I learned to code using C# in
             the Unity game engine and quickly realized that I love coding and have been doing it ever since!
             <br>
             <br>
-            <strong><u><a id="projects_link" href="../website/index.html#projects">Check out some of my projects!</u></strong> ➜</a> 
+            <strong><u><a id="projects_link" href="../website/index.html#projectsectiontitles">Check out some of my projects!</u></strong> ➜</a>
         </p>
 
         <!--<div id="headerSVG1" style="visibility:visible">
@@ -244,17 +245,23 @@
 
         <h2 style="text-align:center; margin-top: 5em;">My Background</h2>
 
-        <div class="mybackground">
+        <div id="mybackground">
             <ul>
-                <li><strong>Student: </strong>I've always had a passion for video games, which is why I chose to attended Columbia College Chicago for a degree in Game Design/Development. 
-                During my time at Columbia, I became familiar with the Unity game engine. I started to write scripts in Unity with C# for many of my projects. I loved scripting and eventually 
-                realized that I loved programming in general.</li>
+                <li>
+                    <strong>Student: </strong>I've always had a passion for video games, which is why I chose to attended Columbia College Chicago for a degree in Game Design/Development.
+                    During my time at Columbia, I became familiar with the Unity game engine. I started to write scripts in Unity with C# for many of my projects. I loved scripting and eventually
+                    realized that I loved programming in general.
+                </li>
                 <br />
-                <li><strong>Alight: </strong>Alight was the first job I got after college. My title was DB Client Calc Automation Specialist. Really what I did was modify formulas in 
-                an excel-like software that calculated retirement benefits for clients. I enjoyed my time at Alight, however it wasn't my passion and eventually I left to persue other opportunities.</li>
+                <li>
+                    <strong>Alight: </strong>Alight was the first job I got after college. My title was DB Client Calc Automation Specialist. Really what I did was modify formulas in
+                    an excel-like software that calculated retirement benefits for clients. I enjoyed my time at Alight, however it wasn't my passion and eventually I left to persue other opportunities.
+                </li>
                 <br />
-                <li><strong>Volition: </strong>I joined Deep Silver Volition in December 2019 as a Quality Assurance Tester. I worked on the Saints Row reboot (2022). I had a lot of fun working at Volition and 
-                met many great people/friends. I was there for around 2.5 years before my contract with them eventually ended.</li>
+                <li>
+                    <strong>Volition: </strong>I joined Deep Silver Volition in December 2019 as a Quality Assurance Tester. I worked on the Saints Row reboot (2022). I had a lot of fun working at Volition and
+                    met many great people/friends. I was there for around 2.5 years before my contract with them eventually ended.
+                </li>
                 <br />
                 <li><strong>Ubisoft: </strong>I now work at Ubisoft as a Development Tester!</li>
             </ul>
@@ -262,7 +269,12 @@
     </main>
 
     <footer>
-        <p>This site is a work in progress, here is a link to <a href="https://www.ryanstaudacher.com/" title="Ryan Staudacher's portfolio website.">my current website</a>.</p>
+        <div id="socialsandlogos">
+            <a href="https://github.com/RyanMStaudacher"><img id="githublogowhite" style="visibility:visible" src="../website/images/githublogowhite.png" alt="Github logo image." /></a>
+            <a href="https://github.com/RyanMStaudacher"><img id="githublogoblack" style="visibility:hidden" src="../website/images/githublogoblack.png" alt="Github logo image." /></a>
+        </div>
     </footer>
+
+    <p id="wiplink">This site is a work in progress, here is a link to <a href="https://www.ryanstaudacher.com/" title="Ryan Staudacher's portfolio website.">my current website</a>.</p>
 </body>
 </html>

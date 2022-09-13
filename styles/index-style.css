@@ -64,16 +64,25 @@ p{
     font-family: 'Raleway';
 }
 
-.modeButton{
-    text-align: center;
+.modeButton {
+    display: flex;
     position: absolute;
-    top: 0;
-    right: 0;
+    z-index: 1000;
+    position: sticky;
+    top: 0.5vw;
+    right: 0.5vw;
     margin: 1vw;
+    justify-content: right;
+    background: rgba(0,0,0,0);
 }
 
-#btn{
-    color: #001220;
+#btn {
+    display: flex;
+    position:sticky;
+    color: #EAEBED;
+    font-family: Raleway;
+    background-color: #001220;
+    border: 1px solid #EAEBED;
 }
 
 .about_me{
@@ -156,15 +165,37 @@ p{
     text-align:left;
 }
 
-.mybackground {
+#mybackground {
     margin: 0 30% 10vh 30%;
     font-size: larger;
-    border-left: 1px solid white;
+    border-left: 1px solid #EAEBED;
 }
 
-footer{
+#socialsandlogos{
+    display: flex;
+    justify-content:center;
+    position: relative;
+}
+
+#githublogowhite{
+    display: flex;
+    position: relative;
+    width: 3em;
+    height: 3em;
+}
+
+#githublogoblack {
+    display: flex;
+    position: absolute;
+    width: 3em;
+    height: 3em;
+}
+
+#wiplink {
     position: sticky;
-    bottom: 0;
+    bottom: 0.5vw;
+    background: rgba(0,0,0,0);
+    margin: 1vw;
 }
 
 
