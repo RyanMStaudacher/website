@@ -105,7 +105,7 @@ p{
     vertical-align: middle;
 }
 
-#projects_link{
+#aboutme_link{
     color: inherit;
     text-decoration: none;
 }
@@ -202,6 +202,14 @@ footer{
     width: 3em;
     height: 3em;
     margin-left: -1.5em;
+}
+
+#linkedinlogo {
+    margin: auto;
+    position: relative;
+    width: 3em;
+    height: 3em;
+    margin-left: 3em;
 }
 
 #wiplink {
