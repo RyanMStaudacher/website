@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Ryan Staudacher - A* Pathfinding</title>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="Ryan Staudacher" />
+    <meta name="description" content="Personal website of Ryan Staudacher. Initially created to learn web programming and potentially show off personal development projects." />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="../images/favicon_images/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon_images/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon_images/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon_images/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon_images/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon_images/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon_images/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon_images/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon_images/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_images/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon_images/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon_images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_images/favicon-16x16.png" />
+    <link rel="manifest" href="./images/favicon_images/manifest.json" />
+    <link rel="stylesheet" href="../styles/project_pages-style.css" />
+
+    <script src="../website/scripts/index-script.js" defer></script>
+</head>
+
+<body style="color: #EAEBED;">
+    <header>
+        <div class="modeButton">
+            <button id="btn">Switch Theme</button>
+        </div>
+
+        <div class="backtohome">
+            <a href="../index.html">Back to home</a>
+        </div>
+
+        <h1>A* Pathfinding (3D)</h1>
+
+        <img src="../images/PathfindingCompressed.gif" />
+        <!--<div class="videocontainer">
+            <iframe src="https://www.youtube.com/embed/V231VgGQjQE" frameborder="0" allowfullscreen class="video"></iframe>
+        </div>-->
+        
+
+        <p>
+            This project took maybe a day or two total of research + work to complete (time spent working, not from project start to project finish). The core part of the project 
+            is the pathfinding script and the actual pathfinding algorithm that I came up with after a bit of research on how the algorithm 
+            is supposed to work. It is comprised of two functions, CalculatePath and TraversePath.
+            <br />
+            <br />
+            When called, the CalculatePath function gets all the neighboring Nodes that are open/walkable and puts them in a list. Then, it calculates the g, h, and f cost of each 
+            of these Nodes, sorts them in order of f cost from least to greatest, picks the one with the lowest f cost and sets it as the current Node and adds it to a list called 
+            pathNodes. It then repeats this loop until it reaches the end Node. Once the end Node is reached, the TraversePath function walks a game object through each of the Nodes 
+            in the pathNodes list until it reaches the end Node.
+            <br />
+            <br />
+            While the pathfinding script and the algorithm was implemented by me, I used some code from <a href="https://www.youtube.com/@SebastianLague">Sebastian Lague's</a> A* tutorial 
+            series to help set up the grid system. However, instead of leaving the grid in 2D and only using the X and Z axis, I added functionality for the Y axis as well, allowing the 
+            algorithm to work in 3D.
+            <br />
+            <br />
+            You can download this project on my Github page <a href="https://github.com/RyanMStaudacher/A_Star-Pathfinding">here</a>.
+        </p>
+    </header>
+</body>
+</html>
